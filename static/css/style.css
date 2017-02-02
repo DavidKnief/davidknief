@@ -1,5 +1,7 @@
 body, html{
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body{
   color: #444a73;
@@ -17,14 +19,13 @@ a{
 }
 .icon{
   text-align: center;
-  margin-top: 20px;
 }
 
 .paralax{
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background: url("/static/iron.jpg");
+  background: url("/static/iron2.jpg");
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -47,7 +48,6 @@ a{
   font-size: 5em;
   border: 30px solid #1C1C1C;
   letter-spacing: 5px;
-  opacity: 0.9;
 }
 .box p{
   font-family: "Arial Black";
@@ -55,6 +55,8 @@ a{
   margin: 0;
 }
 .showcase{
+  margin-left: 10em;
+  margin-right: 10em;
   color: #1C1C1C;
   font-family: "Arial Black";
   letter-spacing: 3px;
