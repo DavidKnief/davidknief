@@ -1,20 +1,19 @@
 body, html{
-  height: 100%
+  height: 100%;
 }
 body{
-  margin: 0 20em 0 20em;
   color: #444a73;
   background: #1C1C1C;
 }
 .footer{
-  background: red;
+  background: green;
 }
 a{
   color: #444a73;
   text-decoration: none;
 }
 .icon img{
-  max-width: 500px;
+  width: 500px;
 }
 .icon{
   text-align: center;
@@ -23,39 +22,28 @@ a{
 
 .paralax{
   min-height: 100%;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-1{
   background: url("/static/iron.jpg");
   width: 100%;
-  height: 100%;
-  position: absolute;
   background-attachment: fixed;
   background-size: cover;
-  top: 0;
-  left: 0;
 }
 
 .first-row-box-properties, .second-row-box-properties{
   text-align: center;
-  width: 100%;
-  left: 0;
   display: flex;
   justify-content: space-around;
 }
 .first-row-box-properties{
-  top: 17em;
+  margin-bottom: 5px;
 }
 .second-row-box-properties{
-  top: 32.5em;
 }
 .box{
   background: #fff;
   padding: 40px 20px 40px 20px;
+  width: 400px;
   font-size: 5em;
   border: 30px solid #1C1C1C;
   letter-spacing: 5px;
@@ -77,10 +65,7 @@ a{
   border-left: 20px solid #606060;
   border-right: 20px solid #606060;
   padding: 20px;
-  margin-top: 100%;
 }
 
 .home-content{
-  max-height: 100%;
-  width: 100%;
 }
