@@ -23,7 +23,6 @@ a{
 
 .paralax{
   min-height: 100%;
-  position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +41,6 @@ a{
 }
 
 .first-row-box-properties, .second-row-box-properties{
-  position: absolute;
   text-align: center;
   width: 100%;
   left: 0;
@@ -57,10 +55,6 @@ a{
 }
 .box{
   background: #fff;
-  max-width: 400px;
-  min-width: 400px;
-  max-height: 100px;
-  min-height: 100px;
   padding: 40px 20px 40px 20px;
   font-size: 5em;
   border: 30px solid #1C1C1C;
@@ -76,14 +70,17 @@ a{
   color: #1C1C1C;
   font-family: "Arial Black";
   letter-spacing: 3px;
-  top: 100%;
   text-align: center;
-  position: relative;
-  max-height: 920px;
   min-height: 920px;
   background: #fff;
   opacity: 0.9;
   border-left: 20px solid #606060;
   border-right: 20px solid #606060;
   padding: 20px;
+  margin-top: 100%;
+}
+
+.home-content{
+  max-height: 100%;
+  width: 100%;
 }
