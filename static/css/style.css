@@ -71,3 +71,7 @@ a{
 
 .home-content{
 }
+
+.models{
+  display: flex;
+}
