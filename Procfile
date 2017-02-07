@@ -1,1 +1,1 @@
-web: python davidknief.py
+web: python3 davidknief.py
