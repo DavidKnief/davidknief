@@ -75,3 +75,10 @@ a{
 .models{
   display: flex;
 }
+
+.showcase, .about, .temporary{
+  display: block;
+}
+.hide {
+  display: none;
+}

@@ -10,36 +10,70 @@ Home page
     <img src="/static/icon.png" alt="Icon">
   </div>
     <div class="first-row-box-properties">
-      <div class="box">
-        <p>MODELS</p>
+      <div id="model_button" onclick="changeMaterial('models')">
+        <div class="box">
+          <p>MODELS</p>
+        </div>
       </div>
-      <a href="/about">
-      <div class="box">
-        <p>ABOUT</p>
+
+      <div id="about_button" onclick="changeMaterial('about')">
+        <div class="box">
+          <p>ABOUT</p>
+        </div>
       </div>
-      </a>
       </div>
     <div class="second-row-box-properties">
-      <div class="box">
-        <p>BOX</p>
+      <div class="temporary_button" onclick="changeMaterial('temporary')">
+        <div class="box">
+          <p>TEMP</p>
+        </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="changeMaterial('box')">
         <p>BOX</p>
       </div>
     </div>
   </div>
-  <div class="showcase">
-    <div class="models">
-      <h1>Here will be a showcase of models!</h1>
-      <div class="box">
-        <p>BOX</p>
-      </div>
+  <div id="showcase">
+    <div class="show" id="models">
+      <h1>Here will be a showcas!</h1>
       <div class="box">
         <p>BOX</p>
       </div>
     </div>
-    <div class="about">
+    <div class="show" id="about">
       <h1>Here will be a page about me!</h1>
+      <div class="box">
+        <p>BOX</p>
+      </div>
+    </div>
+    <div class="show" id="temporary">
+      <div class="box">
+        <p>BOX</p>
+        <h1>This is a temporary thing!</h1>
+      </div>
+    </div>
+    <div class="show" id="box">
+      <h1>This is a temporary!</h1>
+      <div class="box">
+        <p>BOX</p>
+      </div>
     </div>
   </div>
+<script>
+  var showing = [].slice.call(document.getElementsByClassName('show'));
+  var length = showing.length
+  for (var i=0; i < length; i++){
+    showing[i].className = "hide";
+    console.log(showing[i])
+  }
+  function changeMaterial(id){
+      var changing = document.getElementById(id);
+      var showing = document.getElementsByClassName('show');
+      for (var i = 0; i < showing.length; i++) {
+        showing[i].className = "hide"
+     }
+     changing.className = "show"
+     console.log(document.getElementsByClassName('show'));
+  }
+</script>
 {% endblock %}
