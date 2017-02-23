@@ -1,1 +1,1 @@
-web: gunicorn python3 davidknief:app
+web: gunicorn davidknief:app
